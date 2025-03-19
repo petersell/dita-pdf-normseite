@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://www.dita-ot.org/rng/plugin.rnc" type="application/relax-ng-compact-syntax"?>
+
+<plugin id="diagonale-pdf-4-1-2-normseite">
+  <require plugin="org.dita.pdf2.fop"/>
+  <transtype name="print-pdf-normseite" extends="pdf" desc="PDF on A4 paper"/>
+  <feature extension="dita.transtype.print" value="print-pdf-normseite"/>
+  <feature extension="ant.import" file="integrator.xml"/>
+</plugin>
